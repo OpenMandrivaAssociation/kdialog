@@ -21,7 +21,7 @@ The syntax is very much inspired from the "dialog" command
 (which shows text mode dialogs).
 
 %files -f %{name}.lang
-%{_bindir}/kdialog
+%{_bindir}/kdialog*
 %{_datadir}/dbus-1/interfaces/org.kde.kdialog.ProgressDialog.xml
 
 #----------------------------------------------------------------------
