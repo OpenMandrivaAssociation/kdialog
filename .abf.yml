@@ -1,4 +1,2 @@
-removed_sources:
-  kdialog-17.12.1.tar.xz: 94eed5391b730f1eb2f80e2ad3eba20dc66d8910
 sources:
-  kdialog-18.04.3.tar.xz: 3b3ec4448835405a39209a46518edd92bea6a1d7
+  kdialog-18.07.80.tar.xz: ab765fe7988142b72c64796b69dcf6fac6d4dd02
