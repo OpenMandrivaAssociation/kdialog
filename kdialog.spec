@@ -2,7 +2,7 @@
 
 Summary:	Utility to display KDE dialog boxes from shell scripts
 Name:		kdialog
-Version:	19.04.3
+Version:	19.07.80
 Release:	1
 Epoch:		1
 License:	LGPLv2+
@@ -25,6 +25,7 @@ The syntax is very much inspired from the "dialog" command
 %files -f %{name}.lang
 %{_bindir}/kdialog*
 %{_datadir}/dbus-1/interfaces/org.kde.kdialog.ProgressDialog.xml
+%{_datadir}/metainfo/org.kde.kdialog.metainfo.xml
 
 #----------------------------------------------------------------------
 
