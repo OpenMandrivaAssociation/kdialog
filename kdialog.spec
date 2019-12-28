@@ -2,13 +2,13 @@
 
 Summary:	Utility to display KDE dialog boxes from shell scripts
 Name:		kdialog
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Epoch:		1
 License:	LGPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://utils.kde.org/projects/filelight/
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KDELibs4Support)
 BuildRequires:	cmake(KF5KIO)
