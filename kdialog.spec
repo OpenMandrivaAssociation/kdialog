@@ -3,7 +3,7 @@
 Summary:	Utility to display KDE dialog boxes from shell scripts
 Name:		kdialog
 Version:	19.12.1
-Release:	1
+Release:	2
 Epoch:		1
 License:	LGPLv2+
 Group:		Graphical desktop/KDE
