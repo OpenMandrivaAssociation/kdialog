@@ -2,8 +2,8 @@
 
 Summary:	Utility to display KDE dialog boxes from shell scripts
 Name:		kdialog
-Version:	22.12.3
-Release:	2
+Version:	23.03.90
+Release:	1
 Epoch:		1
 License:	LGPLv2+
 Group:		Graphical desktop/KDE
@@ -26,6 +26,7 @@ The syntax is very much inspired from the "dialog" command
 %{_bindir}/kdialog*
 %{_datadir}/dbus-1/interfaces/org.kde.kdialog.ProgressDialog.xml
 %{_datadir}/metainfo/org.kde.kdialog.metainfo.xml
+%{_datadir}/applications/org.kde.kdialog.desktop
 
 #----------------------------------------------------------------------
 
