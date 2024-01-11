@@ -11,6 +11,8 @@ Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kdialo
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6KIO)
 BuildRequires:	cmake(KF6DBusAddons)
+BuildRequires:	cmake(KF6TextWidgets)
+BuildRequires:	cmake(KF6Notifications)
 BuildRequires:	pkgconfig(Qt6DBus)
 
 %description
