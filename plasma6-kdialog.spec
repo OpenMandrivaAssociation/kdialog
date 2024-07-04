@@ -5,7 +5,7 @@
 
 Summary:	Utility to display KDE dialog boxes from shell scripts
 Name:		plasma6-kdialog
-Version:	24.05.1
+Version:	24.05.2
 Release:	%{?git:0.%{git}.}1
 License:	LGPLv2+
 Group:		Graphical desktop/KDE
