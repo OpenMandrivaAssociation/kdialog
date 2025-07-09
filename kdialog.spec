@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Summary:	Utility to display KDE dialog boxes from shell scripts
-Name:		plasma6-kdialog
+Name:		kdialog
 Version:	25.04.0
 Release:	%{?git:0.%{git}.}1
 License:	LGPLv2+
