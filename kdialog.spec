@@ -5,7 +5,7 @@
 
 Summary:	Utility to display KDE dialog boxes from shell scripts
 Name:		kdialog
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	LGPLv2+
 Group:		Graphical desktop/KDE
@@ -22,29 +22,18 @@ BuildRequires:	cmake(KF6TextWidgets)
 BuildRequires:	cmake(KF6Notifications)
 BuildRequires:	pkgconfig(Qt6DBus)
 
+%rename plasma6-kdialog
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Utility to display KDE dialog boxes from shell scripts.
 The syntax is very much inspired from the "dialog" command
 (which shows text mode dialogs).
 
-%files -f kdialog.lang
+%files -f %{name}.lang
 %{_bindir}/kdialog*
 %{_datadir}/dbus-1/interfaces/org.kde.kdialog.ProgressDialog.xml
 %{_datadir}/metainfo/org.kde.kdialog.metainfo.xml
 %{_datadir}/applications/org.kde.kdialog.desktop
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kdialog-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-
-%find_lang kdialog
